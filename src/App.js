@@ -6,8 +6,8 @@ import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import AC from "./components/AC/AC";
 import WashingMachine from "./components/washingmachine/washingmachine"; // Ensure the correct import here
-import Footer from "./components/Footer";
-import Resume from "./components/Resume/ResumeNew";
+
+
 import {
   BrowserRouter as Router,
   Route,
@@ -44,7 +44,7 @@ function App() {
           <Route path="/washingmachine" element={<WashingMachine />} /> {/* Corrected path and component */}
           <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
-        <Footer />
+        
       </div>
     </Router>
   );
