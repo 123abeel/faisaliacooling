@@ -6,10 +6,10 @@ function Type() {
     <Typewriter
       options={{
         strings: [
-          "Air Conditioner Reapiring ",
-          "Washing Machine Reparing  ",
-          "Fridge/Refrigerator Reapairing ",
-          "And all other services regarding to AC, Fridge/refrigerator and Wasing Machine",
+          "Air Conditioner Repairing ",
+          "Washing Machine Repairing  ",
+          "Fridge/Refrigerator Repairing ",
+          "And all other services regarding to AC, Fridge/refrigerator and Washing Machine",
         ],
         autoStart: true,
         loop: true,

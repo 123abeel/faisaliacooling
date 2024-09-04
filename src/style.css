@@ -13,6 +13,66 @@ html {
 
   --imp-text-color: #5bc7f5;
 } 
+.whatsapp-button {
+  position: fixed;
+  right: 10px;
+  top: 140px;
+  z-index: 1000;
+  background-color: #25D366;
+  padding: 10px;
+  border-radius: 10px; /* This will give it a box shape with slightly rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.whatsapp-button a {
+  display: block;
+  color: #ffffff; /* Ensure the icon is visible */
+}
+.call-log-button {
+  position: fixed;
+  left: 10px;
+  top: 140px;
+  z-index: 1000;
+  background-color: #25D366; /* Call button color */
+  padding: 10px;
+  border-radius: 10px; /* Fully rounded button */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  text-decoration: none; /* Remove underline from link */
+  width: 60px; /* Adjust width as needed */
+  height: 60px; /* Adjust height as needed */
+}
+
+.call-log-button-icon {
+  display: block;
+  color: #ffffff; /* Ensure the icon is visible */
+}
+.fixed-content-box {
+  width: 250px; /* Adjusted width */
+  height: 80px; /* Adjusted height */
+  background-color: #333; /* Background color */
+  color: white; /* Text color */
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  border-radius: 8px; /* Optional: rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: shadow effect */
+  position: absolute; /* Change to absolute positioning */
+  right: 20px; /* Adjust distance from the right */
+  top: 99%; /* Adjust distance from the bottom */
+  overflow: auto; /* Add scrolling for overflow content */
+  padding: 10px; /* Optional: padding inside the box */
+  text-align: center; /* Center text alignment */
+  
+}
+
 
 .purple {
   color: var(--imp-text-color) !important;
@@ -86,6 +146,7 @@ button:focus {
   position: fixed !important;
   transition: all 0.3s ease-out 0s !important;
   padding: 0.3rem 2rem !important;
+  margin-top: 2%;
   font-size: 1.2rem !important;
 }
 
@@ -761,4 +822,48 @@ button:focus {
 }
 .fork-btn-inner::after {
   display: none !important;
+}
+.goog-te-gadget-simple{
+  border: none;
+  border-radius: 10px;
+  width: 200px;
+  text-align: center;
+  padding: 10px;
+  padding-inline: 10px;
+  font-size: 15px;
+  margin:10px;
+  font-family: 'Segoe UI';
+  text-align: center;
+  
+}
+
+.goog-te-gadget-simple img{
+  display:none !important;
+}
+
+.goog-te-gadget-simple span{
+  
+
+  color: var(--dark-wood);
+  padding-left: 10px;
+  padding-right: 10px;
+  
+  text-align: center;
+  font-size: 15px;
+  transition: all 0.5s ease;
+  
+}
+.goog-te-gadget-simple span:hover{
+  
+  font-size: 13px;
+  color: var(--light-wood);
+  transition: all 0.5s ease;
+
+  
+}
+.goog-te-gadget-simple iframe{
+    display: flex;
+}  
+.goog-te-gadget-simple iframe img{
+display: none;
 }

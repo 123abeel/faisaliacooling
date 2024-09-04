@@ -4,6 +4,9 @@ import myImg from "../../Assets/myimg.jpg";
 import Tilt from "react-parallax-tilt";
 import { AiFillInstagram, AiFillFacebook } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import { SiGooglemybusiness } from "react-icons/si";
+import WhatsAppButton from "./WhatsAppButton"; // Import the WhatsAppButton component
+import CallLogButton from "./CallLogButton"; // Import the CallLogButton component
 
 function Home2() {
   return (
@@ -58,7 +61,6 @@ function Home2() {
                 src={myImg}
                 className="img-fluid rounded-circle"
                 alt="avatar"
-               
               />
             </Tilt>
           </Col>
@@ -100,10 +102,22 @@ function Home2() {
                   <FaLinkedinIn />
                 </a>
               </li>
+              <li className="social-icons">
+                <a
+                  href="https://business.google.com/v/_/08055064693609408714/8ca5/_?"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour home-social-icons"
+                >
+                  <SiGooglemybusiness />
+                </a>
+              </li>
             </ul>
           </Col>
         </Row>
       </Container>
+      <WhatsAppButton /> {/* Add the WhatsAppButton component */}
+      <CallLogButton /> {/* Add the CallLogButton component */}
     </Container>
   );
 }

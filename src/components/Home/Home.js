@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import homeLogo from "../../Assets/homeimg.png";
+import homeLogo from "../../Assets/homeimg.jpg";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
@@ -39,7 +39,8 @@ function Home() {
                 src={homeLogo}
                 alt="home pic"
                 className="img-fluid"
-                style={{ maxHeight: "450px" }}
+                style={{ maxHeight: "700px", marginTop: "60px" }} // Adjust the margin value as needed
+
               />
             </Col>
           </Row>
